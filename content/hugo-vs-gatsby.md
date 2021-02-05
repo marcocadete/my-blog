@@ -24,7 +24,7 @@ So when the time came to build another site, I decided to explore Hugo since it'
 
 My experience with Hugo was joyous, It just clicked with me. It was simple, quick to understand and implement. No required plugins, it just works.  
 
-The documentation is fantastic, and the community is very active and helpful. The speed at which you can get a site up and running is incredibly fast. I ended up building this blog using Hugo, and I will most likely pick Hugo over Gatsby in the future too.  
+The documentation is fantastic, and the community is very active and helpful. The speed at which you can get a site up and running is incredibly fast. I ended up building this blog using Hugo, and I will most likely pick Hugo over Gatsby in the future.  
 
 Another thing to keep in mind is that these decisions depend a lot on what your project requires. There might be features that you need that Hugo doesn't have and Gatsby does or vice versa, so then choosing the one with the needed features would make more sense.  
 

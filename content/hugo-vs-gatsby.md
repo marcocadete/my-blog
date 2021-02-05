@@ -15,7 +15,7 @@ My first experience with a static site generator was with Gatsby, and the reason
 
 I used WordPress as a headless backend API, so Gatsby would fetch all the content from WordPress and built my site. It worked great. If you would like to see the [code](https://github.com/marcocadete/2020_carmens-website) and/or [website](https://www.carmencadete.com/).  
 
-So how was my experience with Gatsby then, well... mixed. I had a love-hate relationship with it. It's not the easiest static site generator and feels requires plugins to get what you want out of it. Also, it uses GraphQL which is another layer of tooling that you need to learn and understand before you can start creating websites.  
+So how was my experience with Gatsby then, well... mixed. I had a love-hate relationship with it. It's not the easiest static site generator and requires plugins to get what you want out of it. Also, it uses GraphQL which is another layer of tooling that you need to learn and understand before you can start creating websites.  
 
 Knowing that technology changes rapidly, my experience with it today might be different. I still enjoyed Gatsby and I was willing to use it again.  
 

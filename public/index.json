@@ -21,7 +21,7 @@
 
     
     , {
-    "title": "Hugo over Gatsby.",
+    "title": "Hugo over Gatsby",
     "summary": "I explain why I prefer building static sites with Hugo rather than Gatsby.",
     "date": "Jan 9, 2021",
     "featuredImage": "/img/posts/hugo-vs-gatsby.jpg",

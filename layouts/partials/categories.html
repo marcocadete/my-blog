@@ -3,7 +3,7 @@
         {{ with $.Site.GetPage (printf "/categories/%s" $name) }}
         <li class="mr-1 mb-1">
             <a href="{{ .Permalink }}">
-                <span class="badge badge-primary">{{ replace $name "-" " " }}</span>
+                <span class="badge badge-primary">{{ replace $name "-" " " | title }}</span>
             </a>
         </li>
         {{ end }}

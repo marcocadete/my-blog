@@ -18,7 +18,7 @@
         {
             "name": "rss",
             "faIcon": "fas fa-rss",
-            "link": "http://localhost:1313/index.xml"
+            "link": "https://blog.marcocadete.com/index.xml"
         },
         {
             "name": "instagram",

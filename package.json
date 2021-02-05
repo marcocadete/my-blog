@@ -4,7 +4,8 @@
   "description": "A blog built with Hugo",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "npx gulp"
+    "start": "npx gulp",
+    "watch": "npx gulp watch"
   },
   "repository": {
     "type": "git",

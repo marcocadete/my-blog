@@ -5,7 +5,7 @@
     {
     "title": "Arch Linux",
     "summary": "Want to know about my journey to Arch Linux and my personal experience with Arch.",
-    "date": "Feb 2, 4042",
+    "date": "Feb 4, 2021",
     "featuredImage": "/img/posts/arch-linux.png",
     "url" : "/arch-linux/"
 }
@@ -14,7 +14,7 @@
     , {
     "title": "Fluxbox",
     "summary": "An introduction to what I think is the most underated window manager.",
-    "date": "Jan 1, 15151",
+    "date": "Jan 15, 2021",
     "featuredImage": "/img/posts/fluxbox_wm.png",
     "url" : "/fluxbox/"
 }
@@ -23,7 +23,7 @@
     , {
     "title": "Hugo over Gatsby.",
     "summary": "I explain why I prefer building static sites with Hugo rather than Gatsby.",
-    "date": "Jan 1, 9091",
+    "date": "Jan 9, 2021",
     "featuredImage": "/img/posts/hugo-vs-gatsby.jpg",
     "url" : "/hugo-vs-gatsby/"
 }

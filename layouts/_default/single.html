@@ -18,7 +18,7 @@
                     <div class="d-flex flex-wrap align-items-center mb-3">
                         <small>by {{ .Params.author }}</small>
                         <small class="ml-2 mr-2">|</small>
-                        <small class="mr-2">{{ dateFormat "Mon, Jan 1, 2021" .Date }}</small>
+                        <small class="mr-2">{{ dateFormat "Mon, Jan 2, 2006" .Date }}</small>
 
                         {{ $cat := "categories" }}
                         <!-- Use the plural form here -->

@@ -1,0 +1,34 @@
+{
+    "bio": {
+        "greeting": "Hi, I'm Marco",
+        "intro": "I'm a web developer living in Germany. I enjoy writing about open-source software, web development and Linux.",
+        "extra": "If you want to say hi, feel free to get in touch with me via email, Telegram or LinkedIn."
+    },
+    "socialMedia": [
+        {
+            "name": "github",
+            "faIcon": "fab fa-github",
+            "link": "https://github.com/marcocadete"
+        },
+        {
+            "name": "linkedin",
+            "faIcon": "fab fa-linkedin-in",
+            "link": "https://www.linkedin.com/in/marco-cadete"
+        },
+        {
+            "name": "rss",
+            "faIcon": "fas fa-rss",
+            "link": "http://localhost:1313/index.xml"
+        },
+        {
+            "name": "instagram",
+            "faIcon": "fab fa-instagram",
+            "link": "https://www.instagram.com/marco_cadete/"
+        },
+        {
+            "name": "telegram",
+            "faIcon": "fab fa-telegram",
+            "link": "https://t.me/marco_cadete"
+        }
+    ]
+}

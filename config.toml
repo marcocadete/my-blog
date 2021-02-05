@@ -1,0 +1,11 @@
+baseURL = "https://marcocadete.com/"
+languageCode = "en-us"
+title = "Marco Cadete"
+
+disableKinds = ["taxonomyTerm"]
+
+[taxonomies]
+    category = "categories"
+
+[outputs]
+    home = ["JSON", "HTML", "RSS"]

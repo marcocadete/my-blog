@@ -1,0 +1,86 @@
+/*
+Blog list
+------------------
+*/
+.mc-blog-list {
+
+    hr {
+        background-color: $blue;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__posts {
+        padding: 60px 0;
+    }
+
+    &__date {
+        font-size: 12px;
+    }
+
+    &__title {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .pagination > li > a {
+        color: $red;
+        border-color: $red !important;
+    }
+
+    .pagination > li > a:focus,
+    .pagination > li > a:hover,
+    .pagination > li > span:focus,
+    .pagination > li > span:hover {
+        border-color: $red !important;
+        background-color: $red !important;
+    }
+
+    .pagination > .active > a {
+        background-color: $red !important;
+        border-color: $red;
+    }
+
+}
+
+.mc-theme--light .mc-blog-list {
+    .pagination > li > a {
+        background-color: $babyblue !important;
+    }
+
+    .pagination > li > a:focus,
+    .pagination > li > a:hover,
+    .pagination > li > span:focus,
+    .pagination > li > span:hover {
+        color: $blue !important;
+        background-color: $red !important;
+    }
+
+    .pagination > .active > a {
+        color: $blue !important;
+        background-color: $red !important;
+    }
+
+}
+
+.mc-theme--dark .mc-blog-list {
+    .pagination > li > a {
+        background-color: $blue !important;
+    }
+
+    .pagination > li > a:focus,
+    .pagination > li > a:hover,
+    .pagination > li > span:focus,
+    .pagination > li > span:hover {
+        color: $blue !important;
+        background-color: $red !important;
+    }
+
+    .pagination > .active > a {
+        color: $blue !important;
+        background-color: $red !important;
+    }
+}

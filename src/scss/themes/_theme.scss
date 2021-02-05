@@ -1,0 +1,76 @@
+// Change bootstrap theme colors
+$theme-colors: (
+  "primary": #ce4257,
+  "light": #F6F6F6,
+  "dark": #0e161b,
+  "blue": #1B5776,
+  "lightblue": #43b0f1,
+  "babyblue": #ECF2F7,
+  "grey": #6c757d
+);
+
+// Color Variables
+$dark-bg: #0e161b;
+$light-bg: #f6f6f6;
+$grey: #6c757d;
+$blue: #1B5776;
+$babyblue: #ECF2F7;
+$lightblue: #43b0f1; 
+$red: #ce4257;
+
+html.mc-theme--light, html.mc-theme--light > body {
+    background-color: $light-bg;
+    color: $grey;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: $blue !important;
+    }
+
+    .mc-single-post {
+        h2,h3,h4,h5,h6 {
+            color: $blue !important;
+        }
+    }
+
+    // Features Posts
+    .mc-featured {
+        h3 {
+            color: $lightblue !important;
+        }
+    }
+}
+
+html.mc-theme--dark, html.mc-theme--dark > body {
+    background-color: $dark-bg;
+    color: $grey;
+
+    h1 {
+        color: $babyblue !important;
+    }
+
+    h2,h3,h4,h5,h6 {
+        color: $blue !important;
+    } 
+
+    // Header
+    .mc-header {
+        h1 {
+            color: $blue !important;
+        }
+    }
+
+    // Features Posts
+    .mc-featured {
+        h3 {
+            color: $lightblue !important;
+        }
+    }
+    
+    // Single Post
+    .mc-single-post {
+        h2,h3,h4,h5,h6 {
+            color: $blue !important;
+        }
+    }
+
+}

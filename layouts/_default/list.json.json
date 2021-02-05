@@ -1,0 +1,7 @@
+{{ define "response" }}
+[
+    {{ range $index, $e := .Site.RegularPages  }}
+    {{ if $index }}, {{ end }}{{ .Render "li" }}
+    {{ end }}
+]
+{{ end }}

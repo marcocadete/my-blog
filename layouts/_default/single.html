@@ -1,0 +1,67 @@
+{{ define "main" }}
+<main class="mc-single-post">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-8 offset-lg-2 mb-5">
+                <a
+                    href="/"
+                    class="btn btn-sm btn-outline-primary"
+                    role="button"
+                    >« Back to Blog</a
+                >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-8 offset-lg-2">
+                <article>
+                    <h1>{{ .Title }}</h1>
+                    <div class="d-flex flex-wrap align-items-center mb-3">
+                        <small>by {{ .Params.author }}</small>
+                        <small class="ml-2 mr-2">|</small>
+                        <small class="mr-2">{{ dateFormat "Mon, Jan 1, 2021" .Date }}</small>
+
+                        {{ $cat := "categories" }}
+                        <!-- Use the plural form here -->
+                        {{ if gt (len .Params.categories) 0 }}
+                        <small class="ml-2 mr-2">|</small>
+                        <ul class="mc-single-post__categories d-flex flex-wrap align-items-center">
+                            <small>Categories:</small>
+                            {{ range .Param $cat }} {{ $name := . }} {{ with $.Site.GetPage (printf "/%s/%s" $cat ($name |urlize)) }}
+                            <li>
+                                <small><a href="{{ .Permalink }}"><span class="badge badge-primary">{{ $name }}</span></a></small>
+                            </li>
+                            {{ end }} {{ end }}
+                        </ul>
+                        {{ end }}
+                    </div>
+                    <img
+                        class="img-fluid mb-5"
+                        src="{{ .Params.featuredImage }}"
+                        alt="{{ .Title }}"
+                    />
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col d-flex flex-wrap justify-content-between">
+                <div class="m-2">
+                    {{ if .NextPage }}
+                    <a class="text-primary" href="{{ .NextPage.Permalink }}"
+                        >« {{ .NextPage.Title | truncate 50 "..." }}</a
+                    >
+                    {{ end }}
+                </div>
+
+                <div class="m-2">
+                    {{ if .PrevPage }}
+                    <a class="text-primary" href="{{ .PrevPage.Permalink }}"
+                        >{{ .PrevPage.Title | truncate 50 "..."}} »</a
+                    >
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}

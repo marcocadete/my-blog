@@ -1,0 +1,111 @@
+{{ define "main" }}
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<div id="search">
+    <main class="mc-blog-list">
+        <section class="mc-blog-list__posts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 offset-md-1">
+                        <h2 class="font-italic">Search for a post</h2>
+                        <div class="search__input-group input-group input-group-sm mb-5">
+                            <input
+                                type="text"
+                                :class="{'is-invalid': invalidInput, 'form-control': true}"
+                                placeholder="Search posts"
+                                aria-label="Search posts"
+                                v-model="enteredValue"
+                            />
+                            <div class="input-group-append">
+                                <button
+                                    @click="filterPosts"
+                                    class="btn btn-outline-primary"
+                                    type="button"
+                                >
+                                <template v-if="searching">
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    Loading...
+                                </template>
+                                <template v-else>
+                                    Search
+                                </template>
+                                </button>
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter text to search for.
+                            </div>
+                        </div>
+                        <p class="text-primary" v-if="searched && filteredPosts.length === 0">
+                            Sorry, no posts where found matching your input.
+                        </p>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h2 class="font-italic">Pick a Category</h2>
+                        {{ partial "categories" . }}
+                    </div>
+                    <div class="col-12 col-md-10 offset-md-1">
+                        <ul class="mb-5">
+                            <div v-for="post in filteredPosts" :key="post.title">
+                                <li class="mc-blog-list__item d-flex flex-column">
+                                    <small class="mc-blog-list__date text-blue mr-3">
+                                        <% post.date %>
+                                    </small>
+                                    <div>
+                                        <a class="mc-blog-list__title flex-grow-1" :href="post.url"><h3><% post.title %></h3></a>
+
+                                        <p class="text-grey"><% post.summary %></p>
+                                    </div>
+                                </li>
+                                <hr />
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#search",
+        data: {
+            enteredValue: "",
+            searching: false,
+            searched: false,
+            posts: [],
+            filteredPosts: [],
+            invalidInput: false
+        },
+        beforeMount() {
+            this.getPosts();
+        },
+        methods: {
+            async getPosts() {
+                const res = await fetch("/index.json");
+                const data = await res.json();
+                this.posts = data.data;
+            },
+            filterPosts() {
+                if(this.enteredValue === "") {
+                    return this.invalidInput = true;
+                };
+                if(this.enteredValue !== "" && this.invalidInput === true) {
+                    this.invalidInput = false;
+                }
+                const foundPosts = this.posts.filter((post) => {
+                        return this.enteredValue.toLowerCase().split(' ').every(v => post.title.toLowerCase().includes(v))
+                });
+                if(foundPosts.length !== 0){
+                    this.filteredPosts = foundPosts;
+                } else {
+                    this.filteredPosts = [];
+                }
+                this.searched = true;
+            }
+        },
+        delimiters: ["<%", "%>"],
+    });
+</script>
+{{ end }}

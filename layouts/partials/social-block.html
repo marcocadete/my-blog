@@ -1,0 +1,5 @@
+<div class="mc-social d-flex mb-3">
+    {{ range .Site.Data.userInfo.socialMedia }}
+        <a class="text-primary" href="{{ .link }}"><i class="{{ .faIcon }}"></i></a>
+    {{ end }}
+</div>

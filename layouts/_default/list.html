@@ -1,0 +1,31 @@
+{{ define "main" }}
+<main class="mc-blog-list">
+    {{ partial "featured.html" . }}
+    <section class="mc-blog-list__posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1">
+                    <ul class="mb-5">
+                        {{ range .Paginator.Pages }}
+                        <li class="mc-blog-list__item d-flex flex-column">
+                            <small class="mc-blog-list__date text-blue mr-3">
+                                {{ dateFormat "Jan 1, 2021" .Date }}
+                            </small>
+                            <div>
+                                <a class="mc-blog-list__title flex-grow-1" href="{{.Permalink}}">
+                                    <h3>{{ .Title }}</h3>
+                                </a>
+
+                                <p class="text-grey">{{ .Summary }}</p>
+                            </div>
+                        </li>
+                        <hr>
+                        {{ end }}
+                    </ul>
+                    {{ partial "pagination" . }}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}

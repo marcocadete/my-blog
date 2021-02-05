@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+    {{ partial "head" . }}
+    <body class="mc-blog">
+        {{ partial "spinner" . }}
+
+        {{ partial "toggle-theme-switch" .}}
+
+        {{ if ne .Kind "page" }}
+			{{ partial "header" . }}
+        {{ end }}
+
+        {{ block "main" . }}{{ end }}
+
+        {{ block "footer" . }}
+            {{ partial "footer" . }}
+        {{end}}
+
+        {{ partial "scripts" . }}
+    </body>
+</html>

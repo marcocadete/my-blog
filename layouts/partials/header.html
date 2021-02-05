@@ -1,0 +1,23 @@
+<header class="mc-header pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="mc-blog__header-profile col-sm-12 col-md-4 d-flex flex-column">
+                    <a class="text-blue" href="/"><img src="/img/blog/marco.jpeg" alt="Marco Cadete"></a>
+                    {{ partial "social-block" . }}
+                </div>
+                <div class="col-sm-12 col-md-6 mr-md-auto">
+                    <div>
+                        <h1>{{ .Site.Data.userInfo.bio.greeting }}</h1>
+                        <p class="lead text-grey">{{ .Site.Data.userInfo.bio.intro }}</p>
+                        <hr>
+                        <p>{{ .Site.Data.userInfo.bio.extra }}</p>
+                        <p class="lead">
+                            <a href="/" class="btn btn-sm btn-outline-primary mr-2" role="button">Home</a>
+                            <a href="/search" class="btn btn-sm btn-outline-primary mr-2" role="button">Search</a>
+                            <a href="mailto:marco.cadete@gmail.com" class="btn btn-sm btn-outline-primary" role="button">Send me an email</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>

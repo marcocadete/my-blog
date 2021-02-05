@@ -1,0 +1,7 @@
+{
+    "title": "{{ .Title }}",
+    "summary": "{{ .Params.summary }}",
+    "date": "{{ dateFormat "Jan 1, 2021" .Date }}",
+    "featuredImage": "{{ .Params.featuredImage }}",
+    "url" : "{{ .Permalink }}"
+}

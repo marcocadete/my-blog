@@ -1,0 +1,11 @@
+<ul class="mc-categories d-flex flex-wrap">
+    {{ range $name, $value := .Site.Taxonomies.categories }}
+        {{ with $.Site.GetPage (printf "/categories/%s" $name) }}
+        <li class="mr-1 mb-1">
+            <a href="{{ .Permalink }}">
+                <span class="badge badge-primary">{{ replace $name "-" " " }}</span>
+            </a>
+        </li>
+        {{ end }}
+    {{ end }}
+</ul>

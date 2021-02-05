@@ -4,7 +4,7 @@
   "description": "A blog built with Hugo",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx gulp && hugo"
   },
   "repository": {
     "type": "git",

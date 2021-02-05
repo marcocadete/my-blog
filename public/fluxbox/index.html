@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Fluxbox | Marco Cadete</title>
+    <meta charset="utf8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/blog.css">
+    </head>
+
+    <body class="mc-blog">
+        <div class="mc-spinner">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+
+        <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-lg-8 offset-lg-2">
+            <div class="d-flex align-items-center pt-3">
+                <i style="font-size: 14px" class="fas fa-sun mr-2"></i>
+                <div class="custom-control custom-switch">
+                    <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="mc-theme-switch"
+                        checked
+                    />
+                    <label
+                        class="custom-control-label"
+                        for="mc-theme-switch"
+                    ></label>
+                </div>
+                <i style="font-size: 14px" class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+
+        
+<main class="mc-single-post">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-8 offset-lg-2 mb-5">
+                <a
+                    href="/"
+                    class="btn btn-sm btn-outline-primary"
+                    role="button"
+                    >« Back to Blog</a
+                >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-8 offset-lg-2">
+                <article>
+                    <h1>Fluxbox</h1>
+                    <div class="d-flex flex-wrap align-items-center mb-3">
+                        <small>by Marco Cadete</small>
+                        <small class="ml-2 mr-2">|</small>
+                        <small class="mr-2">Fri, Jan 1, 15151</small>
+
+                        
+                        
+                        
+                        <small class="ml-2 mr-2">|</small>
+                        <ul class="mc-single-post__categories d-flex flex-wrap align-items-center">
+                            <small>Categories:</small>
+                              
+                            <li>
+                                <small><a href="https://marcocadete.com/categories/linux/"><span class="badge badge-primary">Linux</span></a></small>
+                            </li>
+                               
+                            <li>
+                                <small><a href="https://marcocadete.com/categories/window-manager/"><span class="badge badge-primary">Window Manager</span></a></small>
+                            </li>
+                             
+                        </ul>
+                        
+                    </div>
+                    <img
+                        class="img-fluid mb-5"
+                        src="/img/posts/fluxbox_wm.png"
+                        alt="Fluxbox"
+                    />
+                    <h3 id="the-most-underated-window-manager">The most underated window manager?</h3>
+<p>Do you know Fluxbox? In my opinion, one of the most underrated window managers around.</p>
+<h5 id="what-ill-be-covering-in-this-article">What I&rsquo;ll be covering in this article:</h5>
+<ol>
+<li>What Fluxbox is, a bit of history for those who don&rsquo;t know.</li>
+<li>What I personally really like about it.</li>
+<li>Features.</li>
+<li>Why I think it&rsquo;s underated.</li>
+</ol>
+<h4 id="so-what-is-fluxbox">So what is Fluxbox?</h4>
+<p>It&rsquo;s a window manager for X that was based on the Blackbox 0.61.1 code. It is very light on resources and easy to handle but yet full of features to make an easy, and extremely fast, desktop experience. It is built using C++ and licensed under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a></p>
+<h4 id="what-i-personally-really-like-about-it">What I personally really like about it</h4>
+<p><em><strong>Easy</strong></em>, <em><strong>Highly configurable</strong></em>, <em><strong>Lightweight</strong></em>, and <em><strong>Stable</strong></em>.</p>
+<p>The first thing that stood out for me when trying Fluxbox for the first time, was how all the configuration files were separated into names matching their purpose, which made it super easy to understand and configure.</p>
+<p>The config files are stored in the home directory, inside a hidden folder called <strong>fluxbox</strong>.</p>
+<h6 id="some-files-inside-the-fluxbox-folder">Some files inside the fluxbox folder:</h6>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/.fluxbox $ tree
+
+.
+|__ <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>|__ apps
+|__ init
+|__ keys
+|__ lastwallpaper
+|__ menu
+|__ slitlist
+|__ startup
+|__ styles
+
+</code></pre></div><p>Once I opened a config file, I quickly noticed how easy it was to understand.
+In my opinion, it&rsquo;s hands down the easiest window manager to configure, but make no mistake, that doesn&rsquo;t mean it&rsquo;s not powerful and feature-rich.</p>
+<p>The syntax of the configuration files are well-formed, which makes it easy to start configuring your window manager. I had mine working to my liking in minutes.</p>
+<h6 id="an-extract-from-the-keys-file">An extract from the keys file:</h6>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">1</span> <span style="color:#75715e"># Run programs</span>
+<span style="color:#ae81ff">2</span> Mod4 :Exec firefox
+<span style="color:#ae81ff">3</span> Mod4 Shift Return :Exec alacritty
+<span style="color:#ae81ff">4</span>
+<span style="color:#ae81ff">5</span> <span style="color:#75715e"># Pulse Audio</span>
+<span style="color:#ae81ff">6</span> XF86AudioRaiseVolume :Exec pactl <span style="color:#f92672">--</span> set<span style="color:#f92672">-</span>sink<span style="color:#f92672">-</span>volume <span style="color:#ae81ff">0</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">3</span><span style="color:#f92672">%</span>
+<span style="color:#ae81ff">7</span> XF86AudioLowerVolume :Exec pactl <span style="color:#f92672">--</span> set<span style="color:#f92672">-</span>sink<span style="color:#f92672">-</span>volume <span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">3</span><span style="color:#f92672">%</span>
+<span style="color:#ae81ff">8</span> XF86AudioMute :Exec pactl <span style="color:#f92672">--</span> set<span style="color:#f92672">-</span>sink<span style="color:#f92672">-</span>mute <span style="color:#ae81ff">0</span> toggle
+<span style="color:#ae81ff">9</span>
+<span style="color:#ae81ff">10</span> <span style="color:#75715e"># Change to Specific workspace</span>
+<span style="color:#ae81ff">11</span> Mod4 :Workspace <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">12</span>
+<span style="color:#ae81ff">13</span> <span style="color:#75715e"># Send the current window to a specific workspace</span>
+<span style="color:#ae81ff">14</span> Mod4 <span style="color:#ae81ff">1</span> :SendToWorkspace <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">15</span>
+<span style="color:#ae81ff">16</span> <span style="color:#75715e"># Send the current window and change to a specific workspace</span>
+<span style="color:#ae81ff">17</span> Control Mod4 <span style="color:#ae81ff">1</span> :TakeToWorkspace <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">18</span>
+<span style="color:#ae81ff">19</span> <span style="color:#75715e"># Auto arranage windows</span>
+<span style="color:#ae81ff">20</span> Control Mod4 v :ArrangeWindowsVertical
+<span style="color:#ae81ff">21</span> Control Mod4 h :ArrangeWindowsHorizontal
+<span style="color:#ae81ff">22</span>
+<span style="color:#ae81ff">23</span> <span style="color:#75715e"># The currently focussed window is used as the main window,</span>
+<span style="color:#ae81ff">24</span> <span style="color:#75715e"># and will fill half the screen, while the other windows are tiled on the other half</span>
+<span style="color:#ae81ff">25</span> Control Mod4 l :ArrangeWindowsStackLeft
+</code></pre></div><p><strong>ArrangeWindowStack</strong>* options are heavenly. I highly recommend trying them out. By pressing two keys, my windows stack perfectly, one main window taking up 50% on the left and all other windows stacked to the right.</p>
+<h6 id="arrangewindowsstackright">ArrangeWindowsStackRight</h6>
+<p><img src="/img/posts/Fluxbox_Tiling.jpg" alt="Fluxbox Tiling"></p>
+<p>It’s really lightweight, by far the lightest window manager I have tested, and stable too. As can be seen in the screenshot below, the CPU and memory consumption are very low. An average of 470M of RAM being used.</p>
+<h6 id="htop-screenshot">HTOP screenshot</h6>
+<p><img src="/img/posts/fluxbox_CPU.png" alt="Fluxbox HTOP"></p>
+<h4 id="what-you-can-do-with-it">What you can do with it</h4>
+<p>Fluxbox has lot&rsquo;s of options such as:</p>
+<ul>
+<li><strong>Tabbing</strong></li>
+<li><strong>Grouping</strong></li>
+<li><strong>Tiling</strong></li>
+<li><strong>Stickiness</strong></li>
+<li><strong>Key Commands</strong></li>
+<li><strong>Fully editable menu</strong></li>
+<li><strong>Application specific parameters</strong></li>
+</ul>
+<p>let me elaborate&hellip;</p>
+<h5 id="tabs">Tabs</h5>
+<p>Tabbing is an awesome feature that allows you to tab windows together. This can be combined with the &ldquo;autogrouping&rdquo; feature that is provided via the apps file, which will make certain applications tab together by default.</p>
+<p><img src="/img/posts/gifs/tabbing.gif" alt="Tabbing"></p>
+<h5 id="grouping">Grouping</h5>
+<p>Setting automatic grouping using the &lsquo;apps&rsquo; file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">~/.</span>fluxbox<span style="color:#f92672">/</span>apps
+<span style="color:#75715e"># A group for editing</span>
+[group]
+    [app] (name<span style="color:#f92672">=</span>gimp) (role<span style="color:#f92672">=</span>gimp<span style="color:#f92672">-</span>dock)
+    [app] (name<span style="color:#f92672">=</span>) (role<span style="color:#f92672">=</span>gimp<span style="color:#f92672">-</span>toolbox)
+    [Layer] {<span style="color:#ae81ff">4</span>}
+[end]
+</code></pre></div><h5 id="tiling">Tiling</h5>
+<p>I’ve used many tiling window managers, and tiling is just one of those features I can’t do without. Organizing your screen into non-overlapping windows, instead of overlapping is great.</p>
+<p>It keeps your screen organized and allows you to multitask efficiently. Fluxbox already has pre-configured commands that allow for vertical and horizontal window arrangements.</p>
+<p>But wait there&rsquo;s more, with the right and left stack window arrangements you need not look any further.</p>
+<p><img src="/img/posts/gifs/tiling.gif" alt="Tiling"></p>
+<h5 id="stickiness">Stickiness</h5>
+<p>One of my favorite features is stickiness. With this feature, you’ll be able to press a button situated on the top left corner of the window’s tab. The icon size will enlarge when activated, then when switching to another workspace, the window follows you and stays in the same position it was in on the previous window.</p>
+<p><img src="/img/posts/stickyness.png" alt="Stickiness"></p>
+<h5 id="key-commands">Key Commands</h5>
+<p>The keys file is where all your keyboard key commands and mouse click and gestures can be configured.</p>
+<h5 id="root-menu">Root Menu</h5>
+<p>Is the menu that appears on a right-click <strong>anywhere</strong> on the desktop. It’s fully customizable.</p>
+<p><img src="/img/posts/root_menu.png" alt="Root Menu"></p>
+<h5 id="tool-bar">Tool bar</h5>
+<p>Is a bar normally at the bottom by default, that shows all the windows on the desktop. It also contains helpful tools such as the current workspace name, a clock, the system tray, and some buttons to switch between workspaces and windows.</p>
+<p><img src="/img/posts/toolbar.png" alt="Toolbar"></p>
+<h5 id="system-tray">System Tray</h5>
+<p>Unlike some lightweight window managers, Fluxbox comes with its own system tray. Applications applets are displayed as little icons in the tray</p>
+<p><img src="/img/posts/system_tray.png" alt="System Tray"></p>
+<h5 id="slit">Slit</h5>
+<p>The Slit is often confused with the toolbar. The slit is a dock for any application that can be &lsquo;dockable&rsquo;. A docked application is anchored and appears on every workspace.</p>
+<p>It cannot be moved freely and is not influenced by any manipulation to windows. Dock apps that are useful in such a situation tend to be clocks, system monitors, weather apps, and so on. Not a feature I use, but it&rsquo;s there if you need it.</p>
+<h5 id="application-specific-parameters">Application specific parameters</h5>
+<p>It will let you manipulate almost any setting for any window or application. The dimension, decoration, default workspace to open on, stickiness, and much more.</p>
+<p><img src="/img/posts/app-specific-settings.png" alt="App Specific Settings"></p>
+<h5 id="so-why-do-i-think-its-underated">So why do I think it&rsquo;s underated</h5>
+<p>Well, my first reason is that it’s not heard of much in the open-source community. If you search on the internet or even Youtube for ‘Fluxbox’ you will find outdated articles and videos.</p>
+<p>Few talk about it or recommend it, not sure if many even know it exists. How I came to know of Fluxbox was through MX Linux, they have an edition based on Fluxbox.</p>
+<p>Secondly, Fluxbox’s documentation and website are not that appealing nor are they easy to navigate. This could potentially lead many astray. My first impression when browsing through their website and their wiki was that this project might be abandoned or something of the sort.</p>
+<h5 id="final-thoughts">Final thoughts</h5>
+<p>I hope I got you excited to atleast give Fluxbox a try and if you do try it and find it awesome, like I do, then please let others know about it too. I will be reaching out to their team to thank them and to offer a helping hand with what I can. As It would be sad to see this project fade away.</p>
+
+                </article>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col d-flex flex-wrap justify-content-between">
+                <div class="m-2">
+                    
+                    <a class="text-primary" href="https://marcocadete.com/arch-linux/"
+                        >« Arch Linux</a
+                    >
+                    
+                </div>
+
+                <div class="m-2">
+                    
+                    <a class="text-primary" href="https://marcocadete.com/hugo-vs-gatsby/"
+                        >Hugo over Gatsby. »</a
+                    >
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+        
+            <footer class="mc-footer">
+	<div class="container">
+        <hr class="text-blue">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mb-5 mb-md-0">
+                <h6 class="text-blue">Follow me on</h6>
+                <div class="mc-social d-flex mb-3">
+    
+        <a class="text-primary" href="https://github.com/marcocadete"><i class="fab fa-github"></i></a>
+    
+        <a class="text-primary" href="https://www.linkedin.com/in/marco-cadete"><i class="fab fa-linkedin-in"></i></a>
+    
+        <a class="text-primary" href="http://localhost:1313/index.xml"><i class="fas fa-rss"></i></a>
+    
+        <a class="text-primary" href="https://www.instagram.com/marco_cadete/"><i class="fab fa-instagram"></i></a>
+    
+        <a class="text-primary" href="https://t.me/marco_cadete"><i class="fab fa-telegram"></i></a>
+    
+</div>
+
+            </div>
+            <div class="col-sm-12 col-md-4 mb-5 mb-md-0 mc-footer__recent-posts">
+                <h6 class="text-blue">Recent Posts</h6>
+                <ul>
+                
+                    <li><a style="font-size: 0.9rem;" class="text-primary" href="https://marcocadete.com/arch-linux/">Arch Linux</a></li>
+                
+                    <li><a style="font-size: 0.9rem;" class="text-primary" href="https://marcocadete.com/fluxbox/">Fluxbox</a></li>
+                
+                    <li><a style="font-size: 0.9rem;" class="text-primary" href="https://marcocadete.com/hugo-vs-gatsby/">Hugo over Gatsby.</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h6 class="text-blue">Post Categories</h6>
+                <ul class="mc-categories d-flex flex-wrap">
+    
+        
+        <li class="mr-1 mb-1">
+            <a href="https://marcocadete.com/categories/linux/">
+                <span class="badge badge-primary">linux</span>
+            </a>
+        </li>
+        
+    
+        
+        <li class="mr-1 mb-1">
+            <a href="https://marcocadete.com/categories/static-sites/">
+                <span class="badge badge-primary">static sites</span>
+            </a>
+        </li>
+        
+    
+        
+        <li class="mr-1 mb-1">
+            <a href="https://marcocadete.com/categories/web-development/">
+                <span class="badge badge-primary">web development</span>
+            </a>
+        </li>
+        
+    
+        
+        <li class="mr-1 mb-1">
+            <a href="https://marcocadete.com/categories/window-manager/">
+                <span class="badge badge-primary">window manager</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="/js/vendors/slick/slick.min.js"></script> 
+<script src="/js/blog.js"></script>
+
+    </body>
+</html>

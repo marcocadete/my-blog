@@ -1,0 +1,34 @@
+{
+    "data" : 
+[
+    
+    {
+    "title": "Arch Linux",
+    "summary": "Want to know about my journey to Arch Linux and my personal experience with Arch.",
+    "date": "Feb 2, 4042",
+    "featuredImage": "/img/posts/arch-linux.png",
+    "url" : "https://marcocadete.com/arch-linux/"
+}
+
+    
+    , {
+    "title": "Fluxbox",
+    "summary": "An introduction to what I think is the most underated window manager.",
+    "date": "Jan 1, 15151",
+    "featuredImage": "/img/posts/fluxbox_wm.png",
+    "url" : "https://marcocadete.com/fluxbox/"
+}
+
+    
+    , {
+    "title": "Hugo over Gatsby.",
+    "summary": "I explain why I prefer building static sites with Hugo rather than Gatsby.",
+    "date": "Jan 1, 9091",
+    "featuredImage": "/img/posts/hugo-vs-gatsby.jpg",
+    "url" : "https://marcocadete.com/hugo-vs-gatsby/"
+}
+
+    
+]
+
+}

@@ -3,7 +3,7 @@ Footer:
 ------------------
 */
 .mc-footer {
-    padding: 80px 0px;
+    padding: 0px 0px;
 
     ul {
         list-style-type: none;
@@ -11,7 +11,16 @@ Footer:
     }
 
     hr {
+        visibility: hidden;
         background-color: $blue;
+    }
+
+    @media (min-width: 768px) {
+        padding: 80px 0px;
+        
+        hr {
+            visibility: visible;
+        }
     }
 
 }

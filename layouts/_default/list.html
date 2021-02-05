@@ -9,7 +9,7 @@
                         {{ range .Paginator.Pages }}
                         <li class="mc-blog-list__item d-flex flex-column">
                             <small class="mc-blog-list__date text-blue mr-3">
-                                {{ dateFormat "Jan 2, 2006" .Date }}
+                                {{ dateFormat "Mon, Jan 2, 2006" .Date }}
                             </small>
                             <div>
                                 <a class="mc-blog-list__title flex-grow-1" href="{{.Permalink}}">

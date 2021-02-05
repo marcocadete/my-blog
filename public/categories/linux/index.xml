@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Marco Cadete</title>
-    <link>https://marcocadete.com/categories/linux/</link>
+    <link>/categories/linux/</link>
     <description>Recent content in Linux on Marco Cadete</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcocadete.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux</title>
-      <link>https://marcocadete.com/arch-linux/</link>
+      <link>/arch-linux/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://marcocadete.com/arch-linux/</guid>
+      <guid>/arch-linux/</guid>
       <description>Want to know about my journey to Arch Linux and my personal experience with Arch.</description>
     </item>
     
     <item>
       <title>Fluxbox</title>
-      <link>https://marcocadete.com/fluxbox/</link>
+      <link>/fluxbox/</link>
       <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://marcocadete.com/fluxbox/</guid>
+      <guid>/fluxbox/</guid>
       <description>An introduction to what I think is the most underated window manager.</description>
     </item>
     

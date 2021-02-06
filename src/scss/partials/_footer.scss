@@ -15,6 +15,12 @@ Footer:
         background-color: $blue;
     }
 
+    &__copyright {
+        margin-top: 80px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
     @media (min-width: 768px) {
         padding: 80px 0px;
         

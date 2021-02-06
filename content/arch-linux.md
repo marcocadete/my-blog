@@ -9,7 +9,7 @@ summary: "Want to know about my journey to Arch Linux and my personal experience
 categories: ["Linux"]
 ---
 
-For a year now, Arch Linux has been powering my personal computers and servers. I have a lot of appreciation for Arch Linux, so I would like to share my experience using it and how it’s benefitted me.  
+For a few months now, Arch Linux has been powering my personal computers and servers. I have a lot of appreciation for Arch Linux, so I would like to share my experience using it and how it’s benefitted me.  
 
 Firstly, I would like you to know that I was using Ubuntu for years until they “introduced” Snaps. I remember how annoying it was trying to get applications when Ubuntu was prioritizing their snap applications over everything else.  
 

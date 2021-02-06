@@ -184,4 +184,4 @@ Secondly, Fluxbox’s documentation and website are not that appealing nor are t
 
 
 ##### Final thoughts  
-I hope I got you excited to atleast give Fluxbox a try and if you do try it and find it awesome, like I do, then please let others know about it too. I will be reaching out to their team to thank them and to offer a helping hand with what I can. As It would be sad to see this project fade away.
+I hope I got you excited to at least give Fluxbox a try and if you do try it and find it awesome, like I do, then please let others know about it too. I will be reaching out to their team to thank them and to offer a helping hand with what I can. As It would be sad to see this project fade away.

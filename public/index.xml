@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Developer on Marco Cadete</title>
-    <link>/index.json</link>
+    <link>https://blog.marcocadete.com/index.json</link>
     <description>Recent content in Web Developer on Marco Cadete</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.marcocadete.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux</title>
-      <link>/arch-linux/</link>
+      <link>https://blog.marcocadete.com/arch-linux/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/arch-linux/</guid>
+      <guid>https://blog.marcocadete.com/arch-linux/</guid>
       <description>Want to know about my journey to Arch Linux and my personal experience with Arch.</description>
     </item>
     
     <item>
       <title>Fluxbox</title>
-      <link>/fluxbox/</link>
+      <link>https://blog.marcocadete.com/fluxbox/</link>
       <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/fluxbox/</guid>
+      <guid>https://blog.marcocadete.com/fluxbox/</guid>
       <description>An introduction to what I think is the most underated window manager.</description>
     </item>
     
     <item>
       <title>Hugo over Gatsby</title>
-      <link>/hugo-vs-gatsby/</link>
+      <link>https://blog.marcocadete.com/hugo-vs-gatsby/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-vs-gatsby/</guid>
+      <guid>https://blog.marcocadete.com/hugo-vs-gatsby/</guid>
       <description>I explain why I prefer building static sites with Hugo rather than Gatsby.</description>
     </item>
     

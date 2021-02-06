@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/arch-linux/</loc>
+    <loc>https://blog.marcocadete.com/arch-linux/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/linux/</loc>
+    <loc>https://blog.marcocadete.com/categories/linux/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://blog.marcocadete.com/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/fluxbox/</loc>
+    <loc>https://blog.marcocadete.com/fluxbox/</loc>
     <lastmod>2021-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/window-manager/</loc>
+    <loc>https://blog.marcocadete.com/categories/window-manager/</loc>
     <lastmod>2021-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-vs-gatsby/</loc>
+    <loc>https://blog.marcocadete.com/hugo-vs-gatsby/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/static-sites/</loc>
+    <loc>https://blog.marcocadete.com/categories/static-sites/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/web-development/</loc>
+    <loc>https://blog.marcocadete.com/categories/web-development/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/search/</loc>
+    <loc>https://blog.marcocadete.com/search/</loc>
   </url>
   
 </urlset>

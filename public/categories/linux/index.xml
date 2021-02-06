@@ -9,7 +9,6 @@
     <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.marcocadete.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux</title>
-      <image>https://blog.marcocadete.com/img/posts/arch-linux.png</image>
       <link>https://blog.marcocadete.com/arch-linux/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
@@ -43,7 +42,6 @@ It was buggy, and so I had decided it was time to discover the unknown and see w
     
     <item>
       <title>Fluxbox</title>
-      <image>https://blog.marcocadete.com/img/posts/fluxbox_wm.png</image>
       <link>https://blog.marcocadete.com/fluxbox/</link>
       <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
       

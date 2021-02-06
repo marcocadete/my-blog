@@ -25,12 +25,11 @@ I had known of Arch, but I was intimidated by it, so I had maneuvered ways aroun
 
 But one morning I woke up feeling fresh, with enough hours of sleep, no bad dreams, no noises during the night, and I didn't have to get up to pee. It was just one of those rare nights of sleep. I also happened to have a glorious cup of coffee.  
 
-The sleep and the coffee were all I needed to give Arch "Installation" a try because to try Arch, you have to make it through the install, like an initiation. To be clear, I'm not talking about the Ca
-    lamares installation. I'm talking about the black screen with text and the wiki.  
+The sleep and the coffee were all I needed to give Arch "Installation" a try because to try Arch, you have to make it through the install, like an initiation. To be clear, I'm not talking about the Calamares installation. I'm talking about the black screen with text and the wiki.  
 
 
 ###### Calamares vs Arch Installation
-![Calamares Install](/img/poststs/calamares-vs-arch_install.png "Calamares vs Arch Installation")
+![Calamares Install](/img/posts/calamares-vs-arch_install.png "Calamares vs Arch Installation")
 
 I had gotten everything ready, the [Arch wiki](https://wiki.archlinux.org/), a YoutTube tutorial, and more coffee. I had to install Arch with an encrypted disk, as I usually install all my distros with encryption. So that added pressure.  
 

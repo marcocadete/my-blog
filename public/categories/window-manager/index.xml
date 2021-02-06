@@ -6,6 +6,7 @@
     <description>Recent content in Window Manager on Marco Cadete</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Marco Cadete and blog.marcocadete.com, 2021. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Marco Cadete and blog.marcocadete.com with appropriate and specific direction to the original content.</copyright>
     <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.marcocadete.com/categories/window-manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fluxbox</title>
@@ -20,126 +21,7 @@
 	  <category>Window Manager</category>
 	  
 	  
-      <description>&lt;h3 id=&#34;the-most-underated-window-manager&#34;&gt;The most underated window manager?&lt;/h3&gt;
-&lt;p&gt;Do you know Fluxbox? In my opinion, one of the most underrated window managers around.&lt;/p&gt;
-&lt;h5 id=&#34;what-ill-be-covering-in-this-article&#34;&gt;What I&amp;rsquo;ll be covering in this article:&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;What Fluxbox is, a bit of history for those who don&amp;rsquo;t know.&lt;/li&gt;
-&lt;li&gt;What I personally really like about it.&lt;/li&gt;
-&lt;li&gt;Features.&lt;/li&gt;
-&lt;li&gt;Why I think it&amp;rsquo;s underated.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;so-what-is-fluxbox&#34;&gt;So what is Fluxbox?&lt;/h4&gt;
-&lt;p&gt;It&amp;rsquo;s a window manager for X that was based on the Blackbox 0.61.1 code. It is very light on resources and easy to handle but yet full of features to make an easy, and extremely fast, desktop experience. It is built using C++ and licensed under the &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT License&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;what-i-personally-really-like-about-it&#34;&gt;What I personally really like about it&lt;/h4&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Easy&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;Highly configurable&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;Lightweight&lt;/strong&gt;&lt;/em&gt;, and &lt;em&gt;&lt;strong&gt;Stable&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The first thing that stood out for me when trying Fluxbox for the first time, was how all the configuration files were separated into names matching their purpose, which made it super easy to understand and configure.&lt;/p&gt;
-&lt;p&gt;The config files are stored in the home directory, inside a hidden folder called &lt;strong&gt;fluxbox&lt;/strong&gt;.&lt;/p&gt;
-&lt;h6 id=&#34;some-files-inside-the-fluxbox-folder&#34;&gt;Some files inside the fluxbox folder:&lt;/h6&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;~/.fluxbox $ tree
-
-.
-|__ &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;|__ apps
-|__ init
-|__ keys
-|__ lastwallpaper
-|__ menu
-|__ slitlist
-|__ startup
-|__ styles
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once I opened a config file, I quickly noticed how easy it was to understand.
-In my opinion, it&amp;rsquo;s hands down the easiest window manager to configure, but make no mistake, that doesn&amp;rsquo;t mean it&amp;rsquo;s not powerful and feature-rich.&lt;/p&gt;
-&lt;p&gt;The syntax of the configuration files are well-formed, which makes it easy to start configuring your window manager. I had mine working to my liking in minutes.&lt;/p&gt;
-&lt;h6 id=&#34;an-extract-from-the-keys-file&#34;&gt;An extract from the keys file:&lt;/h6&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Run programs&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; Mod4 :Exec firefox
-&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; Mod4 Shift Return :Exec alacritty
-&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Pulse Audio&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; XF86AudioRaiseVolume :Exec pactl &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; set&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;sink&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;volume &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; XF86AudioLowerVolume :Exec pactl &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; set&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;sink&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;volume &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; XF86AudioMute :Exec pactl &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; set&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;sink&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;mute &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; toggle
-&lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Change to Specific workspace&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; Mod4 :Workspace &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Send the current window to a specific workspace&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; Mod4 &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; :SendToWorkspace &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Send the current window and change to a specific workspace&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt; Control Mod4 &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; :TakeToWorkspace &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;18&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Auto arranage windows&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; Control Mod4 v :ArrangeWindowsVertical
-&lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt; Control Mod4 h :ArrangeWindowsHorizontal
-&lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# The currently focussed window is used as the main window,&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# and will fill half the screen, while the other windows are tiled on the other half&lt;/span&gt;
-&lt;span style=&#34;color:#ae81ff&#34;&gt;25&lt;/span&gt; Control Mod4 l :ArrangeWindowsStackLeft
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;ArrangeWindowStack&lt;/strong&gt;* options are heavenly. I highly recommend trying them out. By pressing two keys, my windows stack perfectly, one main window taking up 50% on the left and all other windows stacked to the right.&lt;/p&gt;
-&lt;h6 id=&#34;arrangewindowsstackright&#34;&gt;ArrangeWindowsStackRight&lt;/h6&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/Fluxbox_Tiling.jpg&#34; alt=&#34;Fluxbox Tiling&#34;&gt;&lt;/p&gt;
-&lt;p&gt;It’s really lightweight, by far the lightest window manager I have tested, and stable too. As can be seen in the screenshot below, the CPU and memory consumption are very low. An average of 470M of RAM being used.&lt;/p&gt;
-&lt;h6 id=&#34;htop-screenshot&#34;&gt;HTOP screenshot&lt;/h6&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/fluxbox_CPU.png&#34; alt=&#34;Fluxbox HTOP&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;what-you-can-do-with-it&#34;&gt;What you can do with it&lt;/h4&gt;
-&lt;p&gt;Fluxbox has lot&amp;rsquo;s of options such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Tabbing&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Grouping&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Tiling&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stickiness&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Key Commands&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fully editable menu&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Application specific parameters&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;let me elaborate&amp;hellip;&lt;/p&gt;
-&lt;h5 id=&#34;tabs&#34;&gt;Tabs&lt;/h5&gt;
-&lt;p&gt;Tabbing is an awesome feature that allows you to tab windows together. This can be combined with the &amp;ldquo;autogrouping&amp;rdquo; feature that is provided via the apps file, which will make certain applications tab together by default.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/gifs/tabbing.gif&#34; alt=&#34;Tabbing&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;grouping&#34;&gt;Grouping&lt;/h5&gt;
-&lt;p&gt;Setting automatic grouping using the &amp;lsquo;apps&amp;rsquo; file.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;~/.&lt;/span&gt;fluxbox&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;apps
-&lt;span style=&#34;color:#75715e&#34;&gt;# A group for editing&lt;/span&gt;
-[group]
-    [app] (name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;gimp) (role&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;gimp&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;dock)
-    [app] (name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;) (role&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;gimp&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;toolbox)
-    [Layer] {&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;}
-[end]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;tiling&#34;&gt;Tiling&lt;/h5&gt;
-&lt;p&gt;I’ve used many tiling window managers, and tiling is just one of those features I can’t do without. Organizing your screen into non-overlapping windows, instead of overlapping is great.&lt;/p&gt;
-&lt;p&gt;It keeps your screen organized and allows you to multitask efficiently. Fluxbox already has pre-configured commands that allow for vertical and horizontal window arrangements.&lt;/p&gt;
-&lt;p&gt;But wait there&amp;rsquo;s more, with the right and left stack window arrangements you need not look any further.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/gifs/tiling.gif&#34; alt=&#34;Tiling&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;stickiness&#34;&gt;Stickiness&lt;/h5&gt;
-&lt;p&gt;One of my favorite features is stickiness. With this feature, you’ll be able to press a button situated on the top left corner of the window’s tab. The icon size will enlarge when activated, then when switching to another workspace, the window follows you and stays in the same position it was in on the previous window.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/stickyness.png&#34; alt=&#34;Stickiness&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;key-commands&#34;&gt;Key Commands&lt;/h5&gt;
-&lt;p&gt;The keys file is where all your keyboard key commands and mouse click and gestures can be configured.&lt;/p&gt;
-&lt;h5 id=&#34;root-menu&#34;&gt;Root Menu&lt;/h5&gt;
-&lt;p&gt;Is the menu that appears on a right-click &lt;strong&gt;anywhere&lt;/strong&gt; on the desktop. It’s fully customizable.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/root_menu.png&#34; alt=&#34;Root Menu&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;tool-bar&#34;&gt;Tool bar&lt;/h5&gt;
-&lt;p&gt;Is a bar normally at the bottom by default, that shows all the windows on the desktop. It also contains helpful tools such as the current workspace name, a clock, the system tray, and some buttons to switch between workspaces and windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/toolbar.png&#34; alt=&#34;Toolbar&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;system-tray&#34;&gt;System Tray&lt;/h5&gt;
-&lt;p&gt;Unlike some lightweight window managers, Fluxbox comes with its own system tray. Applications applets are displayed as little icons in the tray&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/system_tray.png&#34; alt=&#34;System Tray&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;slit&#34;&gt;Slit&lt;/h5&gt;
-&lt;p&gt;The Slit is often confused with the toolbar. The slit is a dock for any application that can be &amp;lsquo;dockable&amp;rsquo;. A docked application is anchored and appears on every workspace.&lt;/p&gt;
-&lt;p&gt;It cannot be moved freely and is not influenced by any manipulation to windows. Dock apps that are useful in such a situation tend to be clocks, system monitors, weather apps, and so on. Not a feature I use, but it&amp;rsquo;s there if you need it.&lt;/p&gt;
-&lt;h5 id=&#34;application-specific-parameters&#34;&gt;Application specific parameters&lt;/h5&gt;
-&lt;p&gt;It will let you manipulate almost any setting for any window or application. The dimension, decoration, default workspace to open on, stickiness, and much more.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.marcocadete.com/img/posts/app-specific-settings.png&#34; alt=&#34;App Specific Settings&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;so-why-do-i-think-its-underated&#34;&gt;So why do I think it&amp;rsquo;s underated&lt;/h5&gt;
-&lt;p&gt;Well, my first reason is that it’s not heard of much in the open-source community. If you search on the internet or even Youtube for ‘Fluxbox’ you will find outdated articles and videos.&lt;/p&gt;
-&lt;p&gt;Few talk about it or recommend it, not sure if many even know it exists. How I came to know of Fluxbox was through MX Linux, they have an edition based on Fluxbox.&lt;/p&gt;
-&lt;p&gt;Secondly, Fluxbox’s documentation and website are not that appealing nor are they easy to navigate. This could potentially lead many astray. My first impression when browsing through their website and their wiki was that this project might be abandoned or something of the sort.&lt;/p&gt;
-&lt;h5 id=&#34;final-thoughts&#34;&gt;Final thoughts&lt;/h5&gt;
-&lt;p&gt;I hope I got you excited to at least give Fluxbox a try and if you do try it and find it awesome, like I do, then please let others know about it too. I will be reaching out to their team to thank them and to offer a helping hand with what I can. As It would be sad to see this project fade away.&lt;/p&gt;
-</description>
+      <description>An introduction to what I think is the most underated window manager.</description>
     </item>
     
   </channel>

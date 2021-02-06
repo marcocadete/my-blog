@@ -5,6 +5,7 @@
     <link>https://blog.marcocadete.com/search/</link>
     <description>Recent content in Search on Marco Cadete</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://blog.marcocadete.com/search/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>Marco Cadete and blog.marcocadete.com, 2021. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Marco Cadete and blog.marcocadete.com with appropriate and specific direction to the original content.</copyright><atom:link href="https://blog.marcocadete.com/search/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

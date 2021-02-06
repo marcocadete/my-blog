@@ -9,11 +9,30 @@
     <lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.marcocadete.com/categories/static-sites/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo over Gatsby</title>
+      <image>https://blog.marcocadete.com/img/posts/hugo-vs-gatsby.jpg</image>
       <link>https://blog.marcocadete.com/hugo-vs-gatsby/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.marcocadete.com/hugo-vs-gatsby/</guid>
-      <description>I explain why I prefer building static sites with Hugo rather than Gatsby.</description>
+	  
+	  
+	  <category>Web Development</category>
+	  
+	  <category>Static Sites</category>
+	  
+	  
+      <description>&lt;p&gt;I have built websites with both &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and &lt;a href=&#34;https://www.gatsbyjs.com/&#34;&gt;Gatsby&lt;/a&gt;. So I thought I&amp;rsquo;d share my experiences using both these tools and why I prefer Hugo over Gatsby.&lt;/p&gt;
+&lt;p&gt;My first experience with a static site generator was with Gatsby, and the reason I had chosen Gatsby at that time, was that it&amp;rsquo;s React-based, which was great for me because I was already comfortable using React.&lt;/p&gt;
+&lt;p&gt;I used WordPress as a headless backend API, so Gatsby would fetch all the content from WordPress and built my site. It worked great. If you would like to see the &lt;a href=&#34;https://github.com/marcocadete/2020_carmens-website&#34;&gt;code&lt;/a&gt; and/or &lt;a href=&#34;https://www.carmencadete.com/&#34;&gt;website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So how was my experience with Gatsby then, well&amp;hellip; mixed. I had a love-hate relationship with it. It&amp;rsquo;s not the easiest static site generator and requires plugins to get what you want out of it. Also, it uses GraphQL which is another layer of tooling that you need to learn and understand before you can start creating websites.&lt;/p&gt;
+&lt;p&gt;Knowing that technology changes rapidly, my experience with it today might be different. I still enjoyed Gatsby and I was willing to use it again.&lt;/p&gt;
+&lt;p&gt;However, a few months later, I started playing around with Go, the programming language created by Google.
+So when the time came to build another site, I decided to explore Hugo since it&amp;rsquo;s written in Go.&lt;/p&gt;
+&lt;p&gt;My experience with Hugo was joyous, It just clicked with me. It was simple, quick to understand and implement. No required plugins, it just works.&lt;/p&gt;
+&lt;p&gt;The documentation is fantastic, and the community is very active and helpful. The speed at which you can get a site up and running is incredibly fast. I ended up building this blog using Hugo, and I will most likely pick Hugo over Gatsby in the future.&lt;/p&gt;
+&lt;p&gt;Another thing to keep in mind is that these decisions depend a lot on what your project requires. There might be features that you need that Hugo doesn&amp;rsquo;t have and Gatsby does or vice versa, so then choosing the one with the needed features would make more sense.&lt;/p&gt;
+&lt;p&gt;Anyways, try them both out and enjoy the learning process. Static sites are awesome, so picking either one of them is a win.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

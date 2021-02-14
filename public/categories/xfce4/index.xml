@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Window Manager on Marco Cadete</title>
-    <link>https://blog.marcocadete.com/categories/window-manager/</link>
-    <description>Recent content in Window Manager on Marco Cadete</description>
+    <title>Xfce4 on Marco Cadete</title>
+    <link>https://blog.marcocadete.com/categories/xfce4/</link>
+    <description>Recent content in Xfce4 on Marco Cadete</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Marco Cadete and blog.marcocadete.com, 2021. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Marco Cadete and blog.marcocadete.com with appropriate and specific direction to the original content.</copyright>
-    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.marcocadete.com/categories/window-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.marcocadete.com/categories/xfce4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xfce4 with i3</title>
       <link>https://blog.marcocadete.com/xfce4-with-i3wm/</link>
@@ -26,22 +26,6 @@
 	  
 	  
       <description>The best of both worlds, a popular light weight desktop envirnoment with a tilling window manager.</description>
-    </item>
-    
-    <item>
-      <title>Fluxbox</title>
-      <link>https://blog.marcocadete.com/fluxbox/</link>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.marcocadete.com/fluxbox/</guid>
-	  
-	  
-	  <category>Linux</category>
-	  
-	  <category>Window Manager</category>
-	  
-	  
-      <description>An introduction to what I think is the most underated window manager.</description>
     </item>
     
   </channel>

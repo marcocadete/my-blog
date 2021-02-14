@@ -3,6 +3,15 @@
 [
     
     {
+    "title": "Xfce4 with i3",
+    "summary": "The best of both worlds, a popular light weight desktop envirnoment with a tilling window manager.",
+    "date": "Feb 14, 2021",
+    "featuredImage": "/img/posts/xfce4-with-i3.jpg",
+    "url" : "https://blog.marcocadete.com/xfce4-with-i3wm/"
+}
+
+    
+    , {
     "title": "Arch Linux",
     "summary": "Want to know about my journey to Arch Linux and my personal experience with Arch.",
     "date": "Feb 4, 2021",

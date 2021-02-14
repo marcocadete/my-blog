@@ -5,7 +5,7 @@ draft: false
 author: "Marco Cadete"
 featuredImage: "/img/posts/xfce4-with-i3.jpg"
 featured: true
-summary: "The best of both worlds, a popular light weight desktop envirnoment with a tilling window manager."
+summary: "The best of both worlds, a popular lightweight desktop environment with a tiling window manager."
 categories: ["Xfce4", "i3", "Linux", "Window Manager"]
 ---
 

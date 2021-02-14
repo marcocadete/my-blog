@@ -118,10 +118,10 @@
 <p>Additional software you might want is <a href="https://wiki.archlinux.org/index.php/nitrogen">Nitrogen</a>, which will allow you to select wallpapers for your desktop. You will probably also want a compositor, I recommend <a href="https://wiki.archlinux.org/index.php/Picom">Picom</a>, a standalone compositor for Xorg, suitable for use with window managers. This will allow you to set background opacity on terminals.</p>
 <p>Once you have Xfce4, i3, or i3-gaps and Nitrogen installed, then login to Xfce4.</p>
 <h6 id="2-disabling-xfwm-and-xfdesktop">2. Disabling xfwm and xfdesktop</h6>
-<p>You will be replacing <em><strong>xfwm</strong></em> (Xfce window manager) with <em><strong>i3</strong></em>, and <em><strong>xfdesktop</strong></em> (desktop manager) with <em><strong>Nitrogen</strong></em>.</p>
+<p>You will be replacing <em><strong>xfwm4</strong></em> (Xfce window manager) with <em><strong>i3</strong></em>, and <em><strong>xfdesktop</strong></em> (desktop manager) with <em><strong>Nitrogen</strong></em>.</p>
 <p>Open your Xfce4 settings window and select <em><strong>Session and Startup</strong></em>.</p>
 <p><img src="/img/posts/xfce4-session-and-startup.jpg" alt="Xfce4 Session and Startup"></p>
-<p>Select <em><strong>Current Session</strong></em>, and locate the program <em><strong>xfwm4</strong></em>. On the right where it says <em><strong>Restart Style</strong></em> click on the text <em><strong>Immediately</strong></em>. A drop down will open, then select <em><strong>Never</strong></em>. You will need to repeat this step with <em><strong>xfdesktop</strong></em>. So they should both read <em><strong>Never</strong></em> under <em><strong>Restart Style</strong></em>.</p>
+<p>Select <em><strong>Current Session</strong></em>, and locate the programs <em><strong>xfwm4</strong></em> and <em><strong>xfdesktop</strong></em>. Make sure you change their settings to <em><strong>Never</strong></em> restart.</p>
 <p><img src="/img/posts/xfce4-current-session.jpg" alt="Xfce4 Current Session"></p>
 <h6 id="3-creating-startup-applications">3. Creating Startup applications</h6>
 <ul>

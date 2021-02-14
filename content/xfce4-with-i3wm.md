@@ -36,13 +36,13 @@ Once you have Xfce4, i3, or i3-gaps and Nitrogen installed, then login to Xfce4.
 
 ###### 2. Disabling xfwm and xfdesktop
 
-You will be replacing ***xfwm*** (Xfce window manager) with ***i3***, and ***xfdesktop*** (desktop manager) with ***Nitrogen***.  
+You will be replacing ***xfwm4*** (Xfce window manager) with ***i3***, and ***xfdesktop*** (desktop manager) with ***Nitrogen***.  
 
 Open your Xfce4 settings window and select ***Session and Startup***.
 
 ![Xfce4 Session and Startup](/img/posts/xfce4-session-and-startup.jpg)  
 
-Select ***Current Session***, and locate the program ***xfwm4***. On the right where it says ***Restart Style*** click on the text ***Immediately***. A drop down will open, then select ***Never***. You will need to repeat this step with ***xfdesktop***. So they should both read ***Never*** under ***Restart Style***.  
+Select ***Current Session***, and locate the programs ***xfwm4*** and ***xfdesktop***. Make sure you change their settings to ***Never*** restart.  
 
 ![Xfce4 Current Session](/img/posts/xfce4-current-session.jpg)  
 

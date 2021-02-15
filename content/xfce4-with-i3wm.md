@@ -32,9 +32,9 @@ I would suggest you install a distro that has Xfce4. Or, if you have a base inst
 
 Additional software you might want is [Nitrogen](https://wiki.archlinux.org/index.php/nitrogen), which will allow you to select wallpapers for your desktop. You will probably also want a compositor, I recommend [Picom](https://wiki.archlinux.org/index.php/Picom), a standalone compositor for Xorg, suitable for use with window managers. This will allow you to set background opacity on terminals.
 
-Once you have Xfce4, i3, or i3-gaps and Nitrogen installed, then login to Xfce4.  
+Once you have Xfce4, i3 and Nitrogen installed, then login to Xfce4.  
 
-###### 2. Disabling xfwm and xfdesktop
+###### 2. Disabling xfwm4 and xfdesktop
 
 You will be replacing ***xfwm4*** (Xfce window manager) with ***i3***, and ***xfdesktop*** (desktop manager) with ***Nitrogen***.  
 
@@ -48,14 +48,15 @@ Select ***Current Session***, and locate the programs ***xfwm4*** and ***xfdeskt
 
 ###### 3. Creating Startup applications
 
-* Select ***Application Autostart***  
+Select ***Application Autostart***  
 
 ![Xfce4 Startup Applications](/img/posts/xfce4-add-startup-app.jpg)  
 
-* Click on the "+" ***add button***, an ***Add application*** window will open.  
+Click on the "+" ***add button***, an ***Add application*** window will open.  
 
-* In the name input, enter "i3wm", and in the description enter "i3 window manager". The name and description can be whatever you want, It's not that important. The command input is important and has to be the command you would run in the CLI (command line interface) to start i3. So in my case, I would enter "i3". Make sure that ***Trigger*** is set to ***on login***.
-* Add more applications as needed to have them auto-start on startup. I added Nitrogen and Picom.  
+In the name input, enter "i3wm", and in the description enter "i3 window manager". The name and description can be whatever you want, It's not that important. The command input is important and has to be the command you would run in the CLI (command line interface) to start i3. So in my case, I would enter "i3". Make sure that ***Trigger*** is set to ***on login***.  
+
+Add more applications as needed to have them auto-start on startup. I added Nitrogen and Picom.  
 
 ![Xfce4 Startup Application Nitrogen](/img/posts/xfce4-add-startup-app-nitrogen.jpg)  
 
@@ -78,7 +79,7 @@ Once you have logged in, the i3 setup runs and you can select your preferred opt
 $ vim ~/.config/i3/config
 ```
 
-* Open the i3 config file which should be located in your home directory, and locate ***bar***. Remove or comment it out. Then restart i3 by pressing mod+Shift+r or logout of your desktop environment. That should remove the i3 bar.  
+Open the i3 config file which should be located in your home directory, and locate ***bar***. Remove or comment it out. Then restart i3 by pressing mod+Shift+r or logout of your desktop environment. That should remove the i3 bar.  
 
 ```bash
 # bar {

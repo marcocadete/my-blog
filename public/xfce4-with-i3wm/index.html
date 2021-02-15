@@ -116,29 +116,19 @@
 <h6 id="1-install-xfce4-i3-nitrogen-and-picom">1. Install Xfce4, i3, Nitrogen and Picom</h6>
 <p>I would suggest you install a distro that has Xfce4. Or, if you have a base install of your preferred distro, then you&rsquo;d need to install Xfce4 and i3. I installed <a href="https://github.com/Airblader/i3">i3-gaps</a>, as I like having the options of gaps between my windows.</p>
 <p>Additional software you might want is <a href="https://wiki.archlinux.org/index.php/nitrogen">Nitrogen</a>, which will allow you to select wallpapers for your desktop. You will probably also want a compositor, I recommend <a href="https://wiki.archlinux.org/index.php/Picom">Picom</a>, a standalone compositor for Xorg, suitable for use with window managers. This will allow you to set background opacity on terminals.</p>
-<p>Once you have Xfce4, i3, or i3-gaps and Nitrogen installed, then login to Xfce4.</p>
-<h6 id="2-disabling-xfwm-and-xfdesktop">2. Disabling xfwm and xfdesktop</h6>
+<p>Once you have Xfce4, i3 and Nitrogen installed, then login to Xfce4.</p>
+<h6 id="2-disabling-xfwm4-and-xfdesktop">2. Disabling xfwm4 and xfdesktop</h6>
 <p>You will be replacing <em><strong>xfwm4</strong></em> (Xfce window manager) with <em><strong>i3</strong></em>, and <em><strong>xfdesktop</strong></em> (desktop manager) with <em><strong>Nitrogen</strong></em>.</p>
 <p>Open your Xfce4 settings window and select <em><strong>Session and Startup</strong></em>.</p>
 <p><img src="/img/posts/xfce4-session-and-startup.jpg" alt="Xfce4 Session and Startup"></p>
 <p>Select <em><strong>Current Session</strong></em>, and locate the programs <em><strong>xfwm4</strong></em> and <em><strong>xfdesktop</strong></em>. Make sure you change their settings to <em><strong>Never</strong></em> restart.</p>
 <p><img src="/img/posts/xfce4-current-session.jpg" alt="Xfce4 Current Session"></p>
 <h6 id="3-creating-startup-applications">3. Creating Startup applications</h6>
-<ul>
-<li>Select <em><strong>Application Autostart</strong></em></li>
-</ul>
+<p>Select <em><strong>Application Autostart</strong></em></p>
 <p><img src="/img/posts/xfce4-add-startup-app.jpg" alt="Xfce4 Startup Applications"></p>
-<ul>
-<li>
 <p>Click on the &ldquo;+&rdquo; <em><strong>add button</strong></em>, an <em><strong>Add application</strong></em> window will open.</p>
-</li>
-<li>
 <p>In the name input, enter &ldquo;i3wm&rdquo;, and in the description enter &ldquo;i3 window manager&rdquo;. The name and description can be whatever you want, It&rsquo;s not that important. The command input is important and has to be the command you would run in the CLI (command line interface) to start i3. So in my case, I would enter &ldquo;i3&rdquo;. Make sure that <em><strong>Trigger</strong></em> is set to <em><strong>on login</strong></em>.</p>
-</li>
-<li>
 <p>Add more applications as needed to have them auto-start on startup. I added Nitrogen and Picom.</p>
-</li>
-</ul>
 <p><img src="/img/posts/xfce4-add-startup-app-nitrogen.jpg" alt="Xfce4 Startup Application Nitrogen"></p>
 <h6 id="4-removing-default-xfce4-key-bindings">4. Removing default Xfce4 key bindings.</h6>
 <p>Remove Xfce4&rsquo;s default key bindings, so that they don&rsquo;t conflict with i3&rsquo;s key bindings.</p>
@@ -153,9 +143,7 @@
 <h6 id="6-i3-config">6. i3 Config</h6>
 <p>Once you have logged in, the i3 setup runs and you can select your preferred options. You will need to disable the i3 bar, so that it won&rsquo;t display, because you want the xfce4-panel instead.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ vim ~/.config/i3/config
-</code></pre></div><ul>
-<li>Open the i3 config file which should be located in your home directory, and locate <em><strong>bar</strong></em>. Remove or comment it out. Then restart i3 by pressing mod+Shift+r or logout of your desktop environment. That should remove the i3 bar.</li>
-</ul>
+</code></pre></div><p>Open the i3 config file which should be located in your home directory, and locate <em><strong>bar</strong></em>. Remove or comment it out. Then restart i3 by pressing mod+Shift+r or logout of your desktop environment. That should remove the i3 bar.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># bar {</span>
 <span style="color:#75715e">#    status_command i3status</span>
 <span style="color:#75715e"># }</span>

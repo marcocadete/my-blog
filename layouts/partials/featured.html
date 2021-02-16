@@ -13,9 +13,10 @@
                 <ul class="mc-featured__slide d-flex">
                     {{ range first 3 (where .Site.RegularPages "Params.featured" true)}}
                     <li class="mc-featured__post">
-                        <div class="mc-featured__overlay">
-                            <a class="mc-featured__link text-primary" href="{{ .Permalink }}"><h3>{{ .Title }}<span class="ml-2"><i class="fas fa-chevron-circle-right"></i></span></h3></a>
-                        </div>
+                            <a class="mc-featured__link text-primary" href="{{ .Permalink }}">
+                                <h3>{{ .Title }}<span class="ml-2"><i class="fas fa-chevron-circle-right"></i></span></h3>
+                            </a>
+                        <div class="mc-featured__overlay"></div>
                         <div class="mc-featured__image mb-2" style="background-image: url('{{ .Params.featuredImage }}')"></div>
                     </li>
                     {{ end }}
